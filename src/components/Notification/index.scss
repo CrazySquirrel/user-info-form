@@ -1,0 +1,16 @@
+.notification {
+  background: whitesmoke;
+  padding: 24px;
+  text-align: center;
+  font-weight: bold;
+
+  &--success {
+    background: rgb(0, 188, 212);
+    color: #ffffff;
+  }
+
+  &--error {
+    background: rgb(255, 64, 129);
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "apps": [
+    {
+      "name": "User Info Form",
+      "script": "./server.js",
+      "node_args": [
+        "--inspect",
+        "--debug"
+      ],
+      "instances": "1",
+      "exec_mode": "cluster",
+      "watch": false,
+      "cwd": ".",
+      "error_file": "err.log",
+      "out_file": "out.log",
+      "merge_logs": true,
+      "log_type": "json",
+      "log_date_format": "YYYY-MM-DD HH:mm Z"
+    }
+  ]
+}

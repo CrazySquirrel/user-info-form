@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "step-0": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "User ID",
+          "type": "number",
+          "pattern": "^[0-9]{6,}$"
+        },
+        "name": {
+          "title": "User name",
+          "type": "string",
+          "pattern": "^[a-zA-Z\\s]{3,}$"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "step-1": {
+      "type": "object",
+      "properties": {
+        "dateOfBirth": {
+          "title": "Date of birth",
+          "type": "string",
+          "format": "date"
+        },
+        "gender": {
+          "title": "Gender",
+          "type": "string",
+          "enum": [
+            "Male",
+            "Female"
+          ]
+        }
+      },
+      "required": [
+        "date_of_birth",
+        "gender"
+      ]
+    }
+  },
+  "required": [
+    "step-1",
+    "step-2"
+  ]
+}

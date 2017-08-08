@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-transparent">
+
+  <link rel="apple-touch-icon" sizes="180x180"
+        href="%PUBLIC_URL%/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+        href="%PUBLIC_URL%/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194"
+        href="%PUBLIC_URL%/assets/icons/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192"
+        href="%PUBLIC_URL%/assets/icons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+        href="%PUBLIC_URL%/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="%PUBLIC_URL%/assets/icons/manifest.json">
+  <link rel="mask-icon" href="%PUBLIC_URL%/assets/icons/safari-pinned-tab.svg" color="#00bcd4">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/assets/icons/favicon.ico">
+
+  <meta name="apple-mobile-web-app-title" content="User Data Form">
+  <meta name="application-name" content="User Data Form">
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="%PUBLIC_URL%/assets/icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="%PUBLIC_URL%/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#00bcd4">
+
+  <title>User Data Form</title>
+  <meta name="keywords" content="User Data Form">
+  <meta name="description" content="User Data Form">
+  <meta name="author" content="Sergey Yastrebov">
+</head>
+<body>
+<noscript>
+  You need to enable JavaScript to run this app.
+</noscript>
+<div id="root"></div>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('%PUBLIC_URL%/service-worker.js')
+    .then(function (registration) {
+      console.log('Hooray. Registration successful, scope is:', registration.scope);
+    }).catch(function (e) {
+      console.log('Whoops. Service worker registration failed, error:', e);
+    });
+  }
+</script>
+</body>
+</html>
